@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9264d368-f0fc-4a27-8910-2d867a92dd8d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m181104_155347_tbl_user_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m181104_155356_tbl_tag_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m181104_155542_tbl_post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m181104_155552_tbl_comment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m181104_155601_tbl_lookup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021553_create_article_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021601_create_category_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021608_create_tag_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021613_create_user_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170207_135744_add_date_to_comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m181104_194356_tbl_post_table.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,15 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/config/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TblCommentSearch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/models/TblCommentSearch.php">
           <provider selected="true" editor-type-id="text-editor" />
@@ -37,12 +31,20 @@
       </file>
       <file leaf-file-name="Module.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/Module.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="m170124_021553_create_article_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021553_create_article_table.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="m170124_021601_create_category_table.php" pinned="false" current-in-tab="false">
@@ -57,12 +59,29 @@
       </file>
       <file leaf-file-name="m170124_021613_create_user_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021613_create_user_table.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="m170124_021622_create_comment_table.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="m170124_021622_create_comment_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m170124_021633_create_article_tag_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -83,6 +102,18 @@
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_155542_tbl_post.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_180725_tbl_post_table.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_182343_tbl_post_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_194356_tbl_post_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_195450_tbl_post_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_200601_tbl_post_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_201016_tbl_user.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_202430_tbl_post_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_202802_tbl_user_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_202749_tbl_post_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m170124_021613_create_user_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_205922_tbl_post_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m170124_021553_create_article_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php" />
+        <option value="$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php" />
       </list>
     </option>
   </component>
@@ -136,6 +167,27 @@
               <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
               <item name="yii" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -166,6 +218,13 @@
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
@@ -209,12 +268,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541338984283</updated>
-      <workItem from="1541338985710" duration="13878000" />
+      <workItem from="1541338985710" duration="19353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13878000" />
+    <option name="totallyTimeSpent" value="19353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -346,11 +405,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/Module.php">
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_194356_tbl_post_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_195450_tbl_post_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170207_135744_add_date_to_comment.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021553_create_article_table.php">
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_200601_tbl_post_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_201016_tbl_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202430_tbl_post_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202812_tbl_tag_table.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202825_tbl_comment_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202842_tbl_lookup_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202802_tbl_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202749_tbl_post_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_205922_tbl_post_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021601_create_category_table.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -359,10 +487,32 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021613_create_user_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021553_create_article_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

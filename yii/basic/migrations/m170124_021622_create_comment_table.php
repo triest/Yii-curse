@@ -49,7 +49,7 @@ class m170124_021622_create_comment_table extends Migration
             'fk-article_id',
             'comment',
             'article_id',
-            'article',
+            'post',
             'id',
             'CASCADE'
         );

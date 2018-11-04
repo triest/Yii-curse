@@ -12,7 +12,7 @@ class m170124_021553_create_article_table extends Migration
      */
     public function up()
     {
-        $this->createTable('article', [
+        $this->createTable('post', [
             'id' => $this->primaryKey(),
             'title'=>$this->string(),
             'description'=>$this->text(),
@@ -24,6 +24,9 @@ class m170124_021553_create_article_table extends Migration
             'status'=>$this->integer(),
             'category_id'=>$this->integer(),
         ]);
+
+
+
     }
 
     /**

@@ -14,13 +14,14 @@ class m170124_021613_create_user_table extends Migration
     {
         $this->createTable('user', [
             'id' => $this->primaryKey(),
-            'username'=>$this->string(),
+            'name'=>$this->string(),
             'email'=>$this->string()->defaultValue(null),
             'password'=>$this->string(),
             'isAdmin'=>$this->integer()->defaultValue(0),
-            'photo'=>$this->string()->defaultValue(null),
-            'sait'=>$this->string()->defaultValue(null)
+            'photo'=>$this->string()->defaultValue(null)
         ]);
+
+
     }
 
     /**
