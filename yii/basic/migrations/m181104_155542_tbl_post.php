@@ -12,8 +12,26 @@ class m181104_155542_tbl_post extends Migration
      */
     public function safeUp()
     {
+        $this->createTable('tbl_post', [
+            'id' => $this->primaryKey(),
+            'title'=>$this->string(),
+            //'d'=>$this->text(),
+            'status'=>$this->text(),
+            'create_time'=>$this->date(),
+            'update_time'=>$this->string(),
 
+          /*  'viewed'=>$this->integer(),
+            'user_id'=>$this->integer(),
+            'status'=>$this->integer(),
+            'category_id'=>$this->integer(),*/
+
+
+        ]);
     }
+
+     /*ключи*/
+
+
 
     /**
      * {@inheritdoc}

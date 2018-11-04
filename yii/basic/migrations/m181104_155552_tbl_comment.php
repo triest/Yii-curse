@@ -12,7 +12,17 @@ class m181104_155552_tbl_comment extends Migration
      */
     public function safeUp()
     {
+        $this->createTable('tbl_comment', [
+            'id' => $this->primaryKey(),
+            'content'=>$this->string(),
+            'status'=>$this->integer()->defaultValue(0),
+            'create_time'=>$this->date('Y-m-d H:i:s'),
+            'email'=>$this->string()->defaultValue(null),
+            'url'=>$this->string()->defaultValue(null),
 
+           // 'profile'=>$this->integer()->defaultValue(0),
+            //  'photo'=>$this->string()->defaultValue(null)
+        ]);
     }
 
     /**

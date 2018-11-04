@@ -12,6 +12,14 @@ class m181104_155601_tbl_lookup extends Migration
      */
     public function safeUp()
     {
+        $this->createTable('tbl_lookup', [
+            'id' => $this->primaryKey(),
+            'name'=>$this->string(),
+            'code'=>$this->integer(),
+            'type'=>$this->string(),
+            'position'=>$this->integer()->defaultValue(0),
+            //  'photo'=>$this->string()->defaultValue(null)
+        ]);
 
     }
 

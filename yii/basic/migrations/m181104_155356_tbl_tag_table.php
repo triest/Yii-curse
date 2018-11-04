@@ -12,7 +12,14 @@ class m181104_155356_tbl_tag_table extends Migration
      */
     public function safeUp()
     {
-
+        $this->createTable('tbl_tag', [
+            'id' => $this->primaryKey(),
+            'name'=>$this->string(),
+            'frequency'=>$this->string()->defaultValue(null)
+           /* 'password'=>$this->string(),
+            'profile'=>$this->integer()->defaultValue(0),*/
+            //  'photo'=>$this->string()->defaultValue(null)
+        ]);
     }
 
     /**
