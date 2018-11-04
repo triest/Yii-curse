@@ -135,9 +135,9 @@
       <path value="$PROJECT_DIR$/yii/basic/vendor/bower-asset/yii2-pjax/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="101" />
-    <option name="y" value="353" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-71" />
+    <option name="y" value="355" />
     <option name="width" value="1918" />
     <option name="height" value="645" />
   </component>
@@ -220,12 +220,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541338984283</updated>
-      <workItem from="1541338985710" duration="8236000" />
+      <workItem from="1541338985710" duration="8832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8236000" />
+    <option name="totallyTimeSpent" value="8832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="101" y="353" width="1918" height="645" extended-state="0" />
