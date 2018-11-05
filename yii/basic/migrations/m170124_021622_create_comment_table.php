@@ -63,6 +63,6 @@ class m170124_021622_create_comment_table extends Migration
      */
     public function down()
     {
-        $this->dropTable('comment');
+        $this->dropTable('post');
     }
 }
