@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9264d368-f0fc-4a27-8910-2d867a92dd8d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/views/site/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/basic/views/site/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/views/site/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/config/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/models/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,18 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/models/Post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="106" column="5" lean-forward="true" selection-start-line="102" selection-start-column="3" selection-end-line="106" selection-end-column="5" />
-              <folding>
-                <element signature="e#30#38#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Tag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/models/Tag.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,16 +30,16 @@
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+            <state relative-caret-position="760">
+              <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
               <folding>
                 <element signature="e#35#55#0#PHP" expanded="true" />
               </folding>
@@ -62,62 +47,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/views/site/single.php">
+      <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/basic/controllers/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="647">
+              <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/views/site/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="36" />
-              <folding>
-                <element signature="e#6#26#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tags.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/post/tags.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="49" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/post/index.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yii/basic/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/web/markup/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/PostController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding>
-                <element signature="e#49#68#0#PHP" expanded="true" />
+                <element signature="e#30#38#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/basic/config/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/basic/views/site/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/basic/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding>
+                <element signature="e#66#88#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/basic/views/auth/login.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/basic/models/LoginForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -127,6 +117,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getAll</find>
+      <find>username</find>
       <find>getAu</find>
     </findStrings>
   </component>
@@ -142,7 +133,6 @@
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_155356_tbl_tag_table.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_155552_tbl_comment.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_155601_tbl_lookup.php" />
-        <option value="$PROJECT_DIR$/yii/basic/config/web.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_155542_tbl_post.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_180725_tbl_post_table.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_182343_tbl_post_table.php" />
@@ -170,6 +160,9 @@
         <option value="$PROJECT_DIR$/yii/basic/models/Post.php" />
         <option value="$PROJECT_DIR$/yii/basic/views/site/single.php" />
         <option value="$PROJECT_DIR$/yii/basic/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/yii/basic/config/web.php" />
+        <option value="$PROJECT_DIR$/yii/basic/controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/yii/basic/models/User.php" />
       </list>
     </option>
   </component>
@@ -189,7 +182,7 @@
       <path value="$PROJECT_DIR$/yii/basic/vendor/bower-asset/yii2-pjax/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-71" />
     <option name="y" value="355" />
     <option name="width" value="1918" />
@@ -230,14 +223,14 @@
               <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
               <item name="yii" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
               <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
               <item name="yii" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
@@ -252,6 +245,22 @@
               <item name="yii" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
@@ -302,15 +311,15 @@
       <option name="presentableId" value="Default" />
       <updated>1541338984283</updated>
       <workItem from="1541338985710" duration="21614000" />
-      <workItem from="1541403235277" duration="31299000" />
+      <workItem from="1541403235277" duration="32819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52913000" />
+    <option name="totallyTimeSpent" value="54433000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -342,10 +351,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_200601_tbl_post_table.php" />
-    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_201016_tbl_user.php" />
-    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202430_tbl_post_table.php" />
-    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202812_tbl_tag_table.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202825_tbl_comment_table.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202842_tbl_lookup_table.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202802_tbl_user_table.php" />
@@ -393,13 +398,6 @@
         <state relative-caret-position="-102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/config/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/default/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -422,13 +420,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/models/Category.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/models/TblTag.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -497,17 +488,6 @@
         <state relative-caret-position="-204" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="e#66#88#0#PHP" expanded="true" />
-            <element signature="e#2030#2036#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -562,7 +542,7 @@
     <entry file="file://$PROJECT_DIR$/yii/basic/models/Post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="106" column="5" lean-forward="true" selection-start-line="102" selection-start-column="3" selection-end-line="106" selection-end-column="5" />
+          <caret line="106" column="5" selection-start-line="102" selection-start-column="3" selection-end-line="106" selection-end-column="5" />
           <folding>
             <element signature="e#30#38#0#PHP" expanded="true" />
           </folding>
@@ -572,7 +552,7 @@
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -583,12 +563,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#66#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/views/auth/login.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/config/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+        <state relative-caret-position="760">
+          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
           <folding>
             <element signature="e#35#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="e#30#38#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
