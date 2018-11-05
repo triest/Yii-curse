@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\CommentSearch */
+/* @var $model app\modelsUserSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="comment-search">
+<div class="user-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -17,13 +17,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'content') ?>
+    <?= $form->field($model, 'username') ?>
 
-    <?= $form->field($model, 'tags') ?>
+    <?= $form->field($model, 'email') ?>
 
-    <?= $form->field($model, 'status') ?>
+    <?= $form->field($model, 'password') ?>
 
-    <?= $form->field($model, 'post_id') ?>
+    <?= $form->field($model, 'salt') ?>
+
+    <?php // echo $form->field($model, 'profile') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

@@ -4,21 +4,17 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Comment */
+/* @var $model app\models\Tag */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="comment-form">
+<div class="tag-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'content')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'tags')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'status')->textInput() ?>
-
-    <?= $form->field($model, 'post_id')->textInput() ?>
+    <?= $form->field($model, 'frequency')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
