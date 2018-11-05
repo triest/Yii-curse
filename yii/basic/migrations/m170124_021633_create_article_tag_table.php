@@ -12,26 +12,26 @@ class m170124_021633_create_article_tag_table extends Migration
      */
     public function up()
     {
-        $this->createTable('article_tag', [
+        $this->createTable('post_tag', [
             'id' => $this->primaryKey(),
-            'article_id'=>$this->integer(),
+            'post_id'=>$this->integer(),
             'tag_id'=>$this->integer()
         ]);
 
         // creates index for column `user_id`
         $this->createIndex(
-            'tag_article_article_id',
-            'article_tag',
-            'article_id'
+            'tag_post_post_id',
+            'post_tag',
+            'post_id'
         );
 
 
         // add foreign key for table `user`
         $this->addForeignKey(
-            'tag_article_article_id',
-            'article_tag',
-            'article_id',
-            'article',
+            'tag_post_post_id',
+            'post_tag',
+            'post_id',
+            'post',
             'id',
             'CASCADE'
         );
@@ -39,7 +39,7 @@ class m170124_021633_create_article_tag_table extends Migration
         // creates index for column `user_id`
         $this->createIndex(
             'idx_tag_id',
-            'article_tag',
+            'post_tag',
             'tag_id'
         );
 
@@ -47,7 +47,7 @@ class m170124_021633_create_article_tag_table extends Migration
         // add foreign key for table `user`
         $this->addForeignKey(
             'fk-tag_id',
-            'article_tag',
+            'post_tag',
             'tag_id',
             'tag',
             'id',
