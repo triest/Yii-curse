@@ -12,9 +12,10 @@ class m170124_021608_create_tag_table extends Migration
      */
     public function up()
     {
-        $this->createTable('tag', [
+        $this->createTable('tbl_tag', [
             'id' => $this->primaryKey(),
-            'title'=>$this->string()
+            'name'=>$this->string(),
+            'frequency'=>$this->integer(),
         ]);
     }
 
