@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Post;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -61,7 +62,25 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $data=Post::getAll(5);
+
+
+
+        return $this->render('index',
+            [
+                'post'=>$data,
+                'pagination'=>$data['pagination'],
+
+            ]);
+    }
+
+    public function actionView($id){
+        $post = Post::findOne($id);
+       // die($id);
+        return $this->render('single',[
+            'post'=>$post,
+
+        ]);
     }
 
     /**

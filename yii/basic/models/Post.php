@@ -3,7 +3,8 @@
 namespace app\models;
 
 use Yii;
-
+use yii\data\Pagination;
+use yii\helpers\ArrayHelper;
 /**
  * This is the model class for table "post".
  *
@@ -121,6 +122,32 @@ class Post extends \yii\db\ActiveRecord
                 $this->link('tags', $tag);
             }
         }
+    }
+
+    public function getDate()
+    {
+        return Yii::$app->formatter->asDate($this->create_time);
+    }
+
+    public static function getAll($pagination=5){
+        // build a DB query to get all articles with status = 1
+        $query = Post::find();
+
+// get the total number of articles (but do not fetch the article data yet)
+        $count = $query->count();
+
+// create a pagination object with the total count
+        $pagination = new Pagination(['totalCount' => $count,'pageSize'=>$pagination]);
+
+// limit the query using the pagination and retrieve the articles
+       return $post = $query->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+        //var_dump($post);
+    //    die();
+        $date['post']=$post;
+       // $date['pagination']=$pagination;
+        return $date;
     }
 
     public function clearCurrentTags()
