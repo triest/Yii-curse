@@ -12,7 +12,7 @@ class m181105_085506_tbl_lookup extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('tbl_lookup', [
+        $this->createTable('lookup', [
             'id' => $this->primaryKey(),
             'name'=>$this->string(),
             'type'=>$this->string(),

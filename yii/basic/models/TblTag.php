@@ -9,7 +9,9 @@ use Yii;
  *
  * @property int $id
  * @property string $name
- * @property string $frequency
+ * @property int $frequency
+ *
+ * @property PostTag[] $postTags
  */
 class TblTag extends \yii\db\ActiveRecord
 {
@@ -27,7 +29,8 @@ class TblTag extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'frequency'], 'string', 'max' => 255],
+            [['frequency'], 'integer'],
+            [['name'], 'string', 'max' => 255],
         ];
     }
 
@@ -41,5 +44,13 @@ class TblTag extends \yii\db\ActiveRecord
             'name' => 'Name',
             'frequency' => 'Frequency',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPostTags()
+    {
+        return $this->hasMany(PostTag::className(), ['tag_id' => 'id']);
     }
 }

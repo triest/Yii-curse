@@ -5,21 +5,19 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "tbl_lookup".
+ * This is the model class for table "category".
  *
  * @property int $id
- * @property string $name
- * @property string $type
- * @property int $position
+ * @property string $title
  */
-class TblLookup extends \yii\db\ActiveRecord
+class Category extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'tbl_lookup';
+        return 'category';
     }
 
     /**
@@ -28,8 +26,7 @@ class TblLookup extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['position'], 'integer'],
-            [['name', 'type'], 'string', 'max' => 255],
+            [['title'], 'string', 'max' => 255],
         ];
     }
 
@@ -40,9 +37,7 @@ class TblLookup extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'type' => 'Type',
-            'position' => 'Position',
+            'title' => 'Title',
         ];
     }
 }
