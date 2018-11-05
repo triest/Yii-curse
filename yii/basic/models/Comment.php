@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "tbl_comment".
+ * This is the model class for table "comment".
  *
  * @property int $id
  * @property string $content
@@ -15,14 +15,14 @@ use Yii;
  *
  * @property Post $post
  */
-class TblComment extends \yii\db\ActiveRecord
+class Comment extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'tbl_comment';
+        return 'comment';
     }
 
     /**

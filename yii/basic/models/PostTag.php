@@ -11,7 +11,7 @@ use Yii;
  * @property int $post_id
  * @property int $tag_id
  *
- * @property TblTag $tag
+ * @property Tag $tag
  * @property Post $post
  */
 class PostTag extends \yii\db\ActiveRecord
@@ -31,7 +31,7 @@ class PostTag extends \yii\db\ActiveRecord
     {
         return [
             [['post_id', 'tag_id'], 'integer'],
-            [['tag_id'], 'exist', 'skipOnError' => true, 'targetClass' => TblTag::className(), 'targetAttribute' => ['tag_id' => 'id']],
+            [['tag_id'], 'exist', 'skipOnError' => true, 'targetClass' => Tag::className(), 'targetAttribute' => ['tag_id' => 'id']],
             [['post_id'], 'exist', 'skipOnError' => true, 'targetClass' => Post::className(), 'targetAttribute' => ['post_id' => 'id']],
         ];
     }
@@ -53,7 +53,7 @@ class PostTag extends \yii\db\ActiveRecord
      */
     public function getTag()
     {
-        return $this->hasOne(TblTag::className(), ['id' => 'tag_id']);
+        return $this->hasOne(Tag::className(), ['id' => 'tag_id']);
     }
 
     /**

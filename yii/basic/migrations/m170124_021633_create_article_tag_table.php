@@ -49,7 +49,7 @@ class m170124_021633_create_article_tag_table extends Migration
             'fk-tag_id',
             'post_tag',
             'tag_id',
-            'tbl_tag',
+            'tag',
             'id',
             'CASCADE'
         );

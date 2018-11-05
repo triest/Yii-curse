@@ -12,7 +12,7 @@ class m181105_101645_comment_true extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('tbl_comment', [
+        $this->createTable('comment', [
             'id' => $this->primaryKey(),
             //'title'=>$this->string()->notNull(),
             'content'=>$this->string()->notNull(),
@@ -26,14 +26,14 @@ class m181105_101645_comment_true extends Migration
         // creates index for column `user_id`
         $this->createIndex(
             'idx-comment-post_id',
-            'tbl_comment',
+            'comment',
             'post_id'
         );
 
         // add foreign key for table `user`
         $this->addForeignKey(
             'fk-post-post_id',
-            'tbl_comment',
+            'comment',
             'post_id',
             'post',
             'id',

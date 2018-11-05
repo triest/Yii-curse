@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "tbl_tag".
+ * This is the model class for table "tag".
  *
  * @property int $id
  * @property string $name
@@ -13,14 +13,14 @@ use Yii;
  *
  * @property PostTag[] $postTags
  */
-class TblTag extends \yii\db\ActiveRecord
+class Tag extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'tbl_tag';
+        return 'tag';
     }
 
     /**

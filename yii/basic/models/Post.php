@@ -15,9 +15,9 @@ use Yii;
  * @property int $author_id
  * @property int $article_id
  *
+ * @property Comment[] $comments
  * @property User $author
  * @property PostTag[] $postTags
- * @property TblComment[] $tblComments
  */
 class Post extends \yii\db\ActiveRecord
 {
@@ -61,6 +61,14 @@ class Post extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+    public function getComments()
+    {
+        return $this->hasMany(Comment::className(), ['post_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
     public function getAuthor()
     {
         return $this->hasOne(User::className(), ['id' => 'author_id']);
@@ -72,13 +80,5 @@ class Post extends \yii\db\ActiveRecord
     public function getPostTags()
     {
         return $this->hasMany(PostTag::className(), ['post_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getTblComments()
-    {
-        return $this->hasMany(TblComment::className(), ['post_id' => 'id']);
     }
 }
