@@ -4,13 +4,13 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\models\User */
+/* @var $model app\models\TblLookup */
 
-$this->title = 'Create User';
-$this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
+$this->title = 'Create Tbl Lookup';
+$this->params['breadcrumbs'][] = ['label' => 'Tbl Lookups', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="user-create">
+<div class="tbl-lookup-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

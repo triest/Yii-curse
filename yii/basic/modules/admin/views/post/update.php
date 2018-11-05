@@ -3,14 +3,14 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\TblPost */
+/* @var $model app\models\Post */
 
-$this->title = 'Update Tbl Post: ' . $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Tbl Posts', 'url' => ['index']];
+$this->title = 'Update Post: ' . $model->title;
+$this->params['breadcrumbs'][] = ['label' => 'Posts', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
-<div class="tbl-post-update">
+<div class="post-update">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

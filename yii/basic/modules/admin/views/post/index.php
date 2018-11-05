@@ -7,16 +7,16 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\TblPostSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tbl Posts';
+$this->title = 'Posts';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="tbl-post-index">
+<div class="post-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Tbl Post', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Post', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -27,9 +27,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'title',
-            'status:ntext',
-            'create_time',
-            'update_time',
+            'content',
+            'tags',
+            'status',
+            //'author_id',
+            //'article_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

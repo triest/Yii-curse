@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9264d368-f0fc-4a27-8910-2d867a92dd8d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/post/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/tag/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/tag/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/tag/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/tag/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/tag/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/tag/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/user/_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/user/_search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/user/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/user/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/user/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/user/view.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m181105_101645_comment_true.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="m181105_101645_comment_true.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181105_101645_comment_true.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="482">
@@ -43,11 +65,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/basic/models/Post.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/post/view.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="m170124_021633_create_article_tag_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="833">
-              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -70,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021608_create_tag_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -161,27 +193,6 @@
               <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
               <item name="yii" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
-              <item name="yii" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
-              <item name="yii" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
-              <item name="yii" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -212,6 +223,25 @@
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
@@ -263,28 +293,27 @@
       <option name="presentableId" value="Default" />
       <updated>1541338984283</updated>
       <workItem from="1541338985710" duration="21614000" />
-      <workItem from="1541403235277" duration="7826000" />
+      <workItem from="1541403235277" duration="8626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29440000" />
+    <option name="totallyTimeSpent" value="30240000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.32946146" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50104165" side_tool="true" visible="true" weight="0.32946146" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.32946146" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49895832" weight="0.32946146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -435,9 +464,6 @@
     <entry file="file://$PROJECT_DIR$/yii/basic/models/TblCommentSearch.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/Post.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/models/TblPost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204" />
@@ -446,7 +472,7 @@
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
-          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -463,7 +489,7 @@
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021608_create_tag_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -487,6 +513,12 @@
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/Post.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/post/view.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

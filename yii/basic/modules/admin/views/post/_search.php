@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="tbl-post-search">
+<div class="post-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -19,11 +19,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title') ?>
 
+    <?= $form->field($model, 'content') ?>
+
+    <?= $form->field($model, 'tags') ?>
+
     <?= $form->field($model, 'status') ?>
 
-    <?= $form->field($model, 'create_time') ?>
+    <?php // echo $form->field($model, 'author_id') ?>
 
-    <?= $form->field($model, 'update_time') ?>
+    <?php // echo $form->field($model, 'article_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

@@ -30,10 +30,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'content',
+            'tags',
             'status',
-            'create_time',
-            'email:email',
-            'url:url',
+            'post_id',
         ],
     ]) ?>
 
