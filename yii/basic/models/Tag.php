@@ -53,4 +53,10 @@ class Tag extends \yii\db\ActiveRecord
     {
         return $this->hasMany(PostTag::className(), ['tag_id' => 'id']);
     }
+
+    public function getPosts()
+    {
+        return $this->hasMany(Post::className(), ['id' => 'post_id'])
+            ->viaTable('post_tag',['post_id'=>'id']);
+    }
 }

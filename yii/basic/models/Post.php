@@ -40,7 +40,7 @@ class Post extends \yii\db\ActiveRecord
             [['title', 'content'], 'required'],
             [['status', 'author_id', 'article_id'], 'integer'],
             [['create_time', 'update_time'], 'date','format'=>'php:Y-m-d-h-mm-s'],
-            [['create_time'],'default','value'=>date(new \yii\db\Expression("NOW()") )],
+            [['create_time'],'default','value'=>date('Y-m-d')],
             [['title', 'content', 'tags'], 'string', 'max' => 255],
             [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['author_id' => 'id']],
         ];
@@ -86,5 +86,45 @@ class Post extends \yii\db\ActiveRecord
     public function getPostTags()
     {
         return $this->hasMany(PostTag::className(), ['post_id' => 'id']);
+    }
+
+    public function getItems()
+    {
+        return $this->hasMany(\phpDocumentor\Reflection\DocBlock\Tag::className(), ['id' => 'tag_id'])
+            ->viaTable('post_tag', ['post_id' => 'id']);
+    }
+
+    public function getTags()
+    {
+        return $this->hasMany(Tag::className(), ['id' => 'tag_id'])
+            ->viaTable('post_tag', ['post_id' => 'id']);
+    }
+
+    public function getSelectedTags()
+    {
+      return  $selectedIds = $this->getTags()->select('id')->asArray()->all();
+     //   var_dump($selectedIds);
+      //  die();
+        return ArrayHelper::getColumn($selectedIds, 'id');
+    }
+
+    public function saveTags($tags)
+    {
+
+        if (is_array($tags))
+        {
+            $this->clearCurrentTags();
+
+            foreach($tags as $tag_id)
+            {
+                $tag = Tag::findOne($tag_id);
+                $this->link('tags', $tag);
+            }
+        }
+    }
+
+    public function clearCurrentTags()
+    {
+        PostTag::deleteAll(['post_id'=>$this->id]);
     }
 }
