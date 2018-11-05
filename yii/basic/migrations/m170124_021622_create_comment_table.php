@@ -20,6 +20,8 @@ class m170124_021622_create_comment_table extends Migration
             'status'=>$this->integer(),
             'author_id'=>$this->integer(),
             'article_id'=>$this->integer(),
+            'create_time'=>$this->dateTime(),
+            'update_time'=>$this->dateTime()
 
         ]);
 

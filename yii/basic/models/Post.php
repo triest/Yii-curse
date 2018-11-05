@@ -14,6 +14,8 @@ use Yii;
  * @property int $status
  * @property int $author_id
  * @property int $article_id
+ * @property string $create_time
+ * @property string $update_time
  *
  * @property Comment[] $comments
  * @property User $author
@@ -37,6 +39,8 @@ class Post extends \yii\db\ActiveRecord
         return [
             [['title', 'content'], 'required'],
             [['status', 'author_id', 'article_id'], 'integer'],
+            [['create_time', 'update_time'], 'date','format'=>'php:Y-m-d-h-mm-s'],
+            [['create_time'],'default','value'=>date(new \yii\db\Expression("NOW()") )],
             [['title', 'content', 'tags'], 'string', 'max' => 255],
             [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['author_id' => 'id']],
         ];
@@ -55,6 +59,8 @@ class Post extends \yii\db\ActiveRecord
             'status' => 'Status',
             'author_id' => 'Author ID',
             'article_id' => 'Article ID',
+            'create_time' => 'Create Time',
+            'update_time' => 'Update Time',
         ];
     }
 

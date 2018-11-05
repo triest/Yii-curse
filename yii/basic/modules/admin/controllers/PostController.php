@@ -4,7 +4,7 @@ namespace app\modules\admin\controllers;
 
 use Yii;
 use app\models\Post;
-use app\modelsPostSearch;
+use app\models\PostSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -35,7 +35,7 @@ class PostController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new modelsPostSearch();
+        $searchModel = new PostSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
