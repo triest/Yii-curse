@@ -17,6 +17,7 @@ use Yii;
  *
  * @property User $author
  * @property PostTag[] $postTags
+ * @property TblComment[] $tblComments
  */
 class Post extends \yii\db\ActiveRecord
 {
@@ -71,5 +72,13 @@ class Post extends \yii\db\ActiveRecord
     public function getPostTags()
     {
         return $this->hasMany(PostTag::className(), ['post_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTblComments()
+    {
+        return $this->hasMany(TblComment::className(), ['post_id' => 'id']);
     }
 }
