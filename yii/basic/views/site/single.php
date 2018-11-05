@@ -20,19 +20,28 @@ use yii\helpers\Url;
                     <div class="post-content">
                         <header class="entry-header text-center text-uppercase">
                             <h1 class="entry-title"><?= $post->title?></h1>
-                            
-                            <h5>Created:<?=$post->getDate()?></h5>
+                            <div class="entry-content">
+                                <b>By <?= $post->author->username?> On <?= $post->getDate();?></b>
+                            </div>
                         </header>
                         <div class="entry-content">
                             <?= $post->content?>
                         </div>
                         <div class="social-share">
 
+                            <a href="index">К списку постов</a>
 
                             <ul class="text-center pull-right">
 
                             </ul>
                         </div>
+                        Теги:
+
+                        <?php foreach($tags as $tag):?>
+
+                            <?=$tag->name ?>
+                        <?php endforeach; ?>
+
                     </div>
                 </article>
 

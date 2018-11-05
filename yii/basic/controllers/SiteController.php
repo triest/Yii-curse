@@ -76,10 +76,12 @@ class SiteController extends Controller
 
     public function actionView($id){
         $post = Post::findOne($id);
-       // die($id);
+       $tags=$post->tags;
+       var_dump($tags);
+        die();
         return $this->render('single',[
             'post'=>$post,
-
+            'tags'=>$tags
         ]);
     }
 

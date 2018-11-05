@@ -77,10 +77,14 @@ class Post extends \yii\db\ActiveRecord
      * @return \yii\db\ActiveQuery
      */
     public function getAuthor()
-    {
-        return $this->hasOne(User::className(), ['id' => 'author_id']);
-    }
+{
+    return $this->hasOne(User::className(), ['id' => 'author_id']);
+}
 
+    public function getAuthor2()
+    {
+
+    }
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -95,10 +99,18 @@ class Post extends \yii\db\ActiveRecord
             ->viaTable('post_tag', ['post_id' => 'id']);
     }
 
+
     public function getTags()
     {
         return $this->hasMany(Tag::className(), ['id' => 'tag_id'])
             ->viaTable('post_tag', ['post_id' => 'id']);
+    }
+
+    public function getTags2($id){
+
+
+        $tags=null;
+        return $tags;
     }
 
     public function getSelectedTags()
@@ -154,4 +166,6 @@ class Post extends \yii\db\ActiveRecord
     {
         PostTag::deleteAll(['post_id'=>$this->id]);
     }
+
+
 }
