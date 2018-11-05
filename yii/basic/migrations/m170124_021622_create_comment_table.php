@@ -12,26 +12,26 @@ class m170124_021622_create_comment_table extends Migration
      */
     public function up()
     {
-        $this->createTable('article', [
+        $this->createTable('post', [
             'id' => $this->primaryKey(),
             'text'=>$this->string(),
-            'user_id'=>$this->integer(),
+            'author_id'=>$this->integer(),
             'article_id'=>$this->integer(),
             'status'=>$this->integer()
         ]);
 
         // creates index for column `user_id`
         $this->createIndex(
-            'idx-article-user_id',
-            'article',
-            'user_id'
+            'idx-post-author_id',
+            'post',
+            'author_id'
         );
 
         // add foreign key for table `user`
         $this->addForeignKey(
-            'fk-article-user_id',
-            'article',
-            'user_id',
+            'fk-post-author_id',
+            'post',
+            'author_id',
             'user',
             'id',
             'CASCADE'

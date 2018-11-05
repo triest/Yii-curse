@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9264d368-f0fc-4a27-8910-2d867a92dd8d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php" afterDir="false" />
     </list>
@@ -35,8 +34,8 @@
       <file leaf-file-name="m170124_021622_create_comment_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+            <state relative-caret-position="442">
+              <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -53,8 +52,8 @@
       <file leaf-file-name="m170124_021633_create_article_tag_table.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+            <state relative-caret-position="460">
+              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -254,12 +253,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541338984283</updated>
       <workItem from="1541338985710" duration="21614000" />
-      <workItem from="1541403235277" duration="4156000" />
+      <workItem from="1541403235277" duration="4411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25770000" />
+    <option name="totallyTimeSpent" value="26025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -430,15 +429,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        <state relative-caret-position="442">
+          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="460">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
         </state>
       </provider>
     </entry>

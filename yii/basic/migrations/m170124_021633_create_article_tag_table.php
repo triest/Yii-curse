@@ -31,7 +31,7 @@ class m170124_021633_create_article_tag_table extends Migration
             'tag_post_post_id',
             'post_tag',
             'post_id',
-            'article',
+            'post',
             'id',
             'CASCADE'
         );
