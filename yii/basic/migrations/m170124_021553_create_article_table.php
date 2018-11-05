@@ -14,19 +14,28 @@ class m170124_021553_create_article_table extends Migration
     {
         $this->createTable('post', [
             'id' => $this->primaryKey(),
-            'title'=>$this->string(),
-            'description'=>$this->text(),
-            'content'=>$this->text(),
-            'date'=>$this->date(),
-            'image'=>$this->string(),
-            'viewed'=>$this->integer(),
-            'user_id'=>$this->integer(),
-            'status'=>$this->integer(),
-            'category_id'=>$this->integer(),
+            'author_id' => $this->integer()->notNull(),
+            'category_id' => $this->integer()->defaultValue(1),
+            'title' => $this->string(),
+            'body' => $this->text(),
         ]);
 
+        // creates index for column `author_id`
+   /*     $this->createIndex(
+            'idx-post-author_id',
+            'post',
+            'author_id'
+        );
 
-
+        // add foreign key for table `user`
+        $this->addForeignKey(
+            'fk-post-author_id',
+            'post',
+            'author_id',
+            'user',
+            'id',
+            'CASCADE'
+        );*/
     }
 
     /**

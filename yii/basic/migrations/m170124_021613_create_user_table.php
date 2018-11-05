@@ -20,8 +20,6 @@ class m170124_021613_create_user_table extends Migration
             'isAdmin'=>$this->integer()->defaultValue(0),
             'photo'=>$this->string()->defaultValue(null)
         ]);
-
-
     }
 
     /**
