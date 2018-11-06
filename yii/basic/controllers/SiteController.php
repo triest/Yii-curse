@@ -10,6 +10,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\PostForm;
 
 class SiteController extends Controller
 {
@@ -133,9 +134,28 @@ class SiteController extends Controller
             return $this->refresh();
         }
         return $this->render('contact', [
-            'model' => $model,
+         /*   'model' => $model,*/
         ]);
     }
+
+    /**
+     * Displays contact page.
+     *
+     * @return Response|string
+     */
+    public function actionCreate()
+    {
+        $model = new PostForm();
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+            Yii::$app->session->setFlash('contactFormSubmitted');
+
+            return $this->refresh();
+        }
+        return $this->render('contact', [
+            /*   'model' => $model,*/
+        ]);
+    }
+
 
     /**
      * Displays about page.
@@ -146,4 +166,7 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+
+
 }

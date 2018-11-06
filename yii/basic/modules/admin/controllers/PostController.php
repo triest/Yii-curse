@@ -133,8 +133,10 @@ class PostController extends Controller
         $post=$this->findModel($id);
         $selectedTags=[];
        $selectedTags=$post->getSelectedTags();
-     //   var_dump($selectedTags);
+      //  var_dump($selectedTags);
+
         $tags=ArrayHelper::map(Tag::find()->all(),'id','name');
+       // var_dump($tags);
 
         if(Yii::$app->request->isPost){
          //   echo 'ispost';
@@ -146,7 +148,7 @@ class PostController extends Controller
             return $this->actionView($id);
           //  return $this->render(['view','id'=>$post->id]);
         }
-
+       // die();
         return $this->render('tags',['post'=>$post,'tags'=>$tags,'selectedTags'=>$selectedTags]);
 
         //var_dump($post);
