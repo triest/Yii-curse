@@ -70,7 +70,7 @@ class User  extends \yii\db\ActiveRecord implements IdentityInterface
      */
     public static function findIdentity($id)
     {
-        // TODO: Implement findIdentity() method.
+        return User::findOne($id);
     }
 
     /**
@@ -93,7 +93,7 @@ class User  extends \yii\db\ActiveRecord implements IdentityInterface
      */
     public function getId()
     {
-        // TODO: Implement getId() method.
+       return $this->id;
     }
 
     /**
@@ -125,4 +125,18 @@ class User  extends \yii\db\ActiveRecord implements IdentityInterface
     {
         // TODO: Implement validateAuthKey() method.
     }
+
+    public static function findByUsername($username)
+    {
+        return User::find()->where(['username'=>$username])->one();
+    }
+
+    public function validatePassword($password)
+    {
+        return ($this->password == $password) ? true : false;
+    }
+
+
+
+
 }

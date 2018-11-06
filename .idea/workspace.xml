@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9264d368-f0fc-4a27-8910-2d867a92dd8d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/yii/basic/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/config/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/models/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/models/LoginForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/models/Tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yii/basic/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/views/site/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/views/site/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +25,8 @@
       <file leaf-file-name="Tag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/models/Tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="675">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -29,7 +34,7 @@
       <file leaf-file-name="m170124_021633_create_article_tag_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="340">
               <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
             </state>
           </provider>
@@ -38,8 +43,8 @@
       <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+            <state relative-caret-position="556">
+              <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
               <folding>
                 <element signature="e#35#55#0#PHP" expanded="true" />
               </folding>
@@ -47,11 +52,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/basic/views/site/single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/controllers/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+            <state relative-caret-position="306">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -59,8 +73,8 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yii/basic/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+            <state relative-caret-position="697">
+              <caret line="131" column="5" lean-forward="true" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
               <folding>
                 <element signature="e#30#38#0#PHP" expanded="true" />
               </folding>
@@ -68,46 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/config/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/views/site/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/views/layouts/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-              <folding>
-                <element signature="e#66#88#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/basic/views/auth/login.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/models/LoginForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="659">
+              <caret line="50" column="50" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -119,6 +98,9 @@
       <find>getAll</find>
       <find>username</find>
       <find>getAu</find>
+      <find>name</find>
+      <find>validatePassword</find>
+      <find>validate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,16 +134,17 @@
         <option value="$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m170124_021622_create_comment_table.php" />
         <option value="$PROJECT_DIR$/yii/basic/modules/admin/views/post/view.php" />
-        <option value="$PROJECT_DIR$/yii/basic/models/Tag.php" />
         <option value="$PROJECT_DIR$/yii/basic/modules/admin/views/post/tags.php" />
         <option value="$PROJECT_DIR$/yii/basic/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/yii/basic/modules/admin/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/yii/basic/views/site/index.php" />
         <option value="$PROJECT_DIR$/yii/basic/models/Post.php" />
-        <option value="$PROJECT_DIR$/yii/basic/views/site/single.php" />
-        <option value="$PROJECT_DIR$/yii/basic/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/yii/basic/config/web.php" />
         <option value="$PROJECT_DIR$/yii/basic/controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/yii/basic/models/LoginForm.php" />
+        <option value="$PROJECT_DIR$/yii/basic/models/Tag.php" />
+        <option value="$PROJECT_DIR$/yii/basic/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/yii/basic/views/site/single.php" />
         <option value="$PROJECT_DIR$/yii/basic/models/User.php" />
       </list>
     </option>
@@ -193,6 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,7 +258,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,12 +294,13 @@
       <option name="presentableId" value="Default" />
       <updated>1541338984283</updated>
       <workItem from="1541338985710" duration="21614000" />
-      <workItem from="1541403235277" duration="32819000" />
+      <workItem from="1541403235277" duration="33594000" />
+      <workItem from="1541453738407" duration="2957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54433000" />
+    <option name="totallyTimeSpent" value="58165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -332,7 +316,6 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" weight="0.32946146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -342,6 +325,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" weight="0.32946146" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,16 +340,8 @@
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202802_tbl_user_table.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_202749_tbl_post_table.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181104_205922_tbl_post_table.php" />
-    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170207_135744_add_date_to_comment.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021553_create_article_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170207_135744_add_date_to_comment.php" />
+    <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021553_create_article_table.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/Module.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -373,37 +349,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblPostSearch.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblCommentSearch.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblPost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TblPosttController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TbUserController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TbLookupController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TblPostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblPostSearch.php" />
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblCommentSearch.php" />
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblPost.php" />
+    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TblPosttController.php" />
+    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TbUserController.php" />
+    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TbLookupController.php" />
+    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TblPostController.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/default/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblComment.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblComment.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m181105_101645_comment_true.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -421,12 +377,8 @@
     <entry file="file://$PROJECT_DIR$/yii/basic/models/Category.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblTag.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblLookup.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblTag.php" />
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/TblLookup.php" />
     <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/controllers/TblCommentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -492,9 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#49#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -532,13 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/views/site/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/models/Post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -551,22 +493,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/migrations/m170124_021633_create_article_tag_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="340">
           <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="60" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/models/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -579,7 +507,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="476">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding>
             <element signature="e#66#88#0#PHP" expanded="true" />
@@ -597,27 +525,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/Tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+        <state relative-caret-position="556">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
           <folding>
             <element signature="e#35#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/controllers/AuthController.php">
+    <entry file="file://$PROJECT_DIR$/yii/basic/views/site/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+        <state relative-caret-position="578">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/models/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        <state relative-caret-position="697">
+          <caret line="131" column="5" lean-forward="true" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
           <folding>
             <element signature="e#30#38#0#PHP" expanded="true" />
           </folding>

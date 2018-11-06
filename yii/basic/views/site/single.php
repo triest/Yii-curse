@@ -37,10 +37,6 @@ use yii\helpers\Url;
                         </div>
                         Теги:
 
-                        <?php foreach($tags as $tag):?>
-
-                            <?=$tag->name ?>
-                        <?php endforeach; ?>
 
                     </div>
                 </article>
