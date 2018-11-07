@@ -176,13 +176,18 @@ class SiteController extends Controller
        // var_dump($tag);
         $tags2=Tag::find()->where(['name'=>$tag])->one();
       //  var_dump($tags2);
+
          $posts=$tags2->getPosts()->select(['id','title','create_time'])->all();
+        $count = 10;
        // var_dump($posts);
+        $pageSize=10;
+        $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>$pageSize]);
+
 
         return $this->render('index',
             [
                 'post'=>$posts,
-                'pagination'=>$posts['pagination'],
+                'pagination'=>$pagination,
 
             ]);
     }
@@ -201,5 +206,12 @@ class SiteController extends Controller
                 return $this->redirect(['site/view','id'=>$id]);
             }
         }
+    }
+
+    public function getPoluparTags(){
+     //   return 'hello word';
+
+        $tags=Tag::find()->limit(10)->all();
+        return $tags;
     }
 }

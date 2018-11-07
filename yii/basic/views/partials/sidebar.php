@@ -5,10 +5,12 @@ use yii\helpers\Url;
     <div class="primary-sidebar">
 
         <aside class="widget">
-            <h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
+            <h3 class="widget-title text-uppercase text-center">Облако тегов</h3>
 
-
-
+          <?   $tags=$this->context->getPoluparTags(); ?>
+            <?php foreach($tags as $tag):?>
+                <a href="<?= Url::toRoute(['site/tag', 'tag'=>$tag->name]);?>"> <?= $tag->name ?> </a>
+            <?php endforeach; ?>
 
         </aside>
         <aside class="widget pos-padding">
