@@ -68,14 +68,6 @@ class Post extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getComments()
-    {
-        return $this->hasMany(Comment::className(), ['post_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
     public function getAuthor()
 {
     return $this->hasOne(User::className(), ['id' => 'author_id']);
@@ -173,6 +165,16 @@ class Post extends \yii\db\ActiveRecord
     public function clearCurrentTags()
     {
         PostTag::deleteAll(['post_id'=>$this->id]);
+    }
+
+    public function getComments()
+    {
+        return $this->hasMany(Comment::className(), ['post_id'=>'id']);
+    }
+
+    public function getArticleComments()
+    {
+        return $this->getComments()->where(['status'=>1])->all();
     }
 
 

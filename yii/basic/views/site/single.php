@@ -41,6 +41,36 @@ use yii\helpers\Url;
 
                         <?php endforeach; ?>
                     </div>
+                    <br>
+
+                    <b>Добавить комментарий:</b>
+                    <?php $form = \yii\widgets\ActiveForm::begin([
+                        'action'=>['site/comment', 'id'=>$post->id],
+                        'options'=>['class'=>'form-horizontal contact-form', 'role'=>'form']])?>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <?= $form->field($commentForm, 'comment')->textarea(['class'=>'form-control','placeholder'=>'Введие коментарий'])->label(false)?>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn send-btn">Отправить комментарий</button>
+                    <?php \yii\widgets\ActiveForm::end();?>
+
+
+
+                    Комментарии:
+                    <?php if(!empty($comments)):?>
+
+                        <?php foreach($comments as $comment):?>
+                            <div class="bottom-comment">
+                                <div class="commemt-text">
+                                    <?= $comment->content ?>
+                                </div>
+                                <div class="comment-date">
+                                    <?= $comment->create_time ?>
+                                </div>
+                            </div>
+                        <?php endforeach ?>
+                    <?php endif; ?>
                 </article>
 
         </div>

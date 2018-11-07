@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Post;
 use app\models\Tag;
+use app\models\CommentForm;
 use Yii;
 use yii\data\Pagination;
 use yii\filters\AccessControl;
@@ -77,12 +78,14 @@ class SiteController extends Controller
         $posts = $query->offset($pagination->offset)
             ->limit($pagination->limit)
             ->all();
+        $commentForm = new CommentForm();
+
 
         return $this->render('index',
             [
                 'post'=>$posts,
                 'pagination'=>$pagination,
-
+                'commentForm'=>$commentForm
             ]);
     }
 
@@ -93,11 +96,16 @@ class SiteController extends Controller
         //  var_dump($tags);
       //  die();
         $selectedTags=$post->getSelectedTags();
+        $comments=$post->comments;
+      //  var_dump($comments);
+        $commentForm=new CommentForm();
       //  var_dump($selectedTags);
      //   die();
         return $this->render('single',[
             'post'=>$post,
-            'tags'=>$selectedTags
+            'tags'=>$selectedTags,
+            'comments'=>$comments,
+            'commentForm'=>$commentForm
         ]);
     }
 
@@ -177,5 +185,21 @@ class SiteController extends Controller
                 'pagination'=>$posts['pagination'],
 
             ]);
+    }
+
+    public function  actionComment($id){
+
+        //die($id);
+        $model = new CommentForm();
+
+        if(Yii::$app->request->isPost)
+        {
+            $model->load(Yii::$app->request->post());
+            if($model->saveComment($id))
+            {
+                Yii::$app->getSession()->setFlash('comment', 'Your comment will be added soon!');
+                return $this->redirect(['site/view','id'=>$id]);
+            }
+        }
     }
 }
