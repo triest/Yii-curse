@@ -37,8 +37,8 @@ use yii\helpers\Url;
                         </div>
                         Теги:
                         <?php foreach($tags as $tag):?>
-                            <?= $tag ?>
-                            <?= $tag->id ?>
+                            <a href="<?= Url::toRoute(['site/tag', 'tag'=>$tag]);?>"> <?= $tag ?> </a>
+
                         <?php endforeach; ?>
                     </div>
                 </article>

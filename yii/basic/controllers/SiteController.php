@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Post;
+use app\models\Tag;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -149,5 +150,21 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+
+    public function actionTag($tag){
+       // var_dump($tag);
+        $tags2=Tag::find()->where(['name'=>$tag])->one();
+      //  var_dump($tags2);
+         $posts=$tags2->getPosts()->select(['id','title','create_time'])->all();
+       // var_dump($posts);
+
+        return $this->render('index',
+            [
+                'post'=>$posts,
+                'pagination'=>$posts['pagination'],
+
+            ]);
     }
 }
