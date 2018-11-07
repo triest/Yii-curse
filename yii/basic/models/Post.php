@@ -115,15 +115,15 @@ class Post extends \yii\db\ActiveRecord
 
     public function getSelectedTags()
     {
-        $selectedIds = $this->getTags()->select('id')->asArray()->all();
-     //   var_dump($selectedIds);
+        $selectedIds = $this->getTags()->select(['id','name'])->asArray()->all();
+      //  var_dump($selectedIds);
       //  die();
-        return ArrayHelper::getColumn($selectedIds, 'id');
+        return ArrayHelper::getColumn($selectedIds, 'name');
     }
 
     public function getSelectedTags2()
     {
-        $selectedIds = $this->getTags()->select('id','name')->asArray()->all();
+        $selectedIds = $this->getTags()->select('id','name')->all();
          //  var_dump($selectedIds);
         //  die();
         return$selectedIds;

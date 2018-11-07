@@ -36,8 +36,9 @@ use yii\helpers\Url;
                             </ul>
                         </div>
                         Теги:
-                        <?php foreach($post->getSelectedTags2() as $tag):?>
-                            <?= $tag->name?> d
+                        <?php foreach($tags as $tag):?>
+                            <?= $tag ?>
+                            <?= $tag->id ?>
                         <?php endforeach; ?>
                     </div>
                 </article>
