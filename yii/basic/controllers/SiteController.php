@@ -4,7 +4,9 @@ namespace app\controllers;
 
 use app\models\Post;
 use app\models\Tag;
+use app\models\Comment;
 use app\models\CommentForm;
+//use Codeception\Step\Comment;
 use Yii;
 use yii\data\Pagination;
 use yii\filters\AccessControl;
@@ -210,8 +212,14 @@ class SiteController extends Controller
 
     public function getPoluparTags(){
      //   return 'hello word';
-
         $tags=Tag::find()->limit(10)->all();
         return $tags;
+    }
+
+    public function getLastComments(){
+
+        $comments=Comment::find()->orderBy('create_time','ASC')->limit(5)->all();
+      //  var_dump($comments);
+        return $comments;
     }
 }

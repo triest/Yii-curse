@@ -5,7 +5,7 @@ use yii\helpers\Url;
     <div class="primary-sidebar">
 
         <aside class="widget">
-            <h3 class="widget-title text-uppercase text-center">Облако тегов</h3>
+            <h5 class="widget-title text-uppercase text-center">Облако тегов</h5>
 
           <?   $tags=$this->context->getPoluparTags(); ?>
             <?php foreach($tags as $tag):?>
@@ -13,15 +13,14 @@ use yii\helpers\Url;
             <?php endforeach; ?>
 
         </aside>
-        <aside class="widget pos-padding">
-            <h3 class="widget-title text-uppercase text-center">Recent Posts</h3>
 
-        </aside>
         <aside class="widget border pos-padding">
-            <h3 class="widget-title text-uppercase text-center">Categories</h3>
+            <h5 class="widget-title text-uppercase text-center">Недавние комментарии:</h5>
             <ul>
-
-
+                <?   $comments=$this->context->getLastComments(); ?>
+                <?php foreach($comments as $comment): ?>
+                    <?= $comment->content ?>
+                <?php endforeach; ?>
             </ul>
         </aside>
     </div>
