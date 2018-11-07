@@ -36,7 +36,9 @@ use yii\widgets\LinkPager;
                 <?php endforeach; ?>
 
                 <?php
-
+                echo LinkPager::widget([
+                    'pagination' => $pagination,
+                ]);
                 ?>
             </div>
 

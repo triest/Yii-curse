@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\Post;
 use app\models\Tag;
 use Yii;
+use yii\data\Pagination;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
@@ -63,14 +64,24 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $data=Post::getAll(5);
+       // $data=Post::find();
+        $query = Post::find();
+        $countQuery = clone $query;
+        $count=$query->count();
+     //   $query = Post::find();
 
-
+        // get the total number of articles (but do not fetch the article data yet)
+        $count = $query->count();
+        $pageSize=10;
+        $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>$pageSize]);
+        $posts = $query->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
 
         return $this->render('index',
             [
-                'post'=>$data,
-                'pagination'=>$data['pagination'],
+                'post'=>$posts,
+                'pagination'=>$pagination,
 
             ]);
     }
