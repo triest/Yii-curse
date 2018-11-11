@@ -40,6 +40,7 @@ class Post extends \yii\db\ActiveRecord
         return [
             [['title', 'content'], 'required'],
             [['status', 'author_id', 'article_id'], 'integer'],
+            [ [ 'status' ], 'in', 'range' => [ 1,2, 3 ] ],
             [['create_time', 'update_time'], 'date','format'=>'php:Y-m-d-h-mm-s'],
             [['create_time'],'default','value'=>date('Y-m-d')],
             [['title', 'content', 'tags'], 'string', 'max' => 255],

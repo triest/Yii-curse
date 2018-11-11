@@ -33,6 +33,7 @@ class Tag extends \yii\db\ActiveRecord
         return [
             [['frequency'], 'integer'],
             [['name'], 'string', 'max' => 255],
+            [['name'], 'string', 'max' => 255],
         ];
     }
 

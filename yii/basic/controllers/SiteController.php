@@ -176,10 +176,15 @@ class SiteController extends Controller
 
     public function actionTag($tag){
        // var_dump($tag);
-        $tags2=Tag::find()->where(['name'=>$tag])->one();
+        $tags2=Tag::find()
+            ->where(['name'=>$tag])
+            ->one();
+     //   $tags2=Tag::find()->where(['name'=>$tag])->andWhere(['status'=>2])->one();
       //  var_dump($tags2);
 
-         $posts=$tags2->getPosts()->select(['id','title','create_time'])->all();
+         $posts=$tags2->getPosts()->select(['id','title','create_time'])
+             ->where(['status'=>2])
+             ->all();
         $count = 10;
        // var_dump($posts);
         $pageSize=10;
