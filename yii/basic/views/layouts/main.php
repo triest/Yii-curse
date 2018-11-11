@@ -38,11 +38,13 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
+            ['label' => 'IS MAIN!', 'url' => ['/site/index']],
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About1', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Post', 'url' => ['/admin/post/index']],
+            ['label' => 'Comments', 'url' => ['/admin/comment/index']],
+            ['label' => 'Tag', 'url' => ['/admin/tag/index']],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
+            ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')
@@ -59,18 +61,13 @@ AppAsset::register($this);
     ?>
 
     <div class="container">
-        <div class="col-md-8">
-            <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
-            <?= Alert::widget() ?>
-            <?= $content ?>
-        </div>
-        <?= $this->render('/partials/sidebar');?>
-
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
+        <?= Alert::widget() ?>
+        <?= $content ?>
     </div>
 </div>
-
 
 <footer class="footer">
     <div class="container">

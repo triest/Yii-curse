@@ -7,6 +7,7 @@
  */
 
 use yii\helpers\Url;
+use yii\widgets\LinkPager;
 ?>
 <!--main content start-->
 <div class="main-content">
@@ -16,7 +17,7 @@ use yii\helpers\Url;
                 <article class="post">
                     <div class="post-thumb">
 
-                    </div>
+
                     <div class="post-content">
                         <header class="entry-header text-center text-uppercase">
                             <h1 class="entry-title"><?= $post->title?></h1>
@@ -72,7 +73,7 @@ use yii\helpers\Url;
                         <?php endforeach ?>
                     <?php endif; ?>
                 </article>
-
+            </div>
         </div>
     </div>
 </div>

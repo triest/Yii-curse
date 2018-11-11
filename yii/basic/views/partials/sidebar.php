@@ -19,7 +19,7 @@ use yii\helpers\Url;
             <ul>
                 <?   $comments=$this->context->getLastComments(); ?>
                 <?php foreach($comments as $comment): ?>
-                    <?= $comment->content ?>
+                    <?= $comment->content ?> <br>
                 <?php endforeach; ?>
             </ul>
         </aside>

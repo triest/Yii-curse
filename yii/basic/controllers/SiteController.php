@@ -68,7 +68,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
        // $data=Post::find();
-        $query = Post::find();
+        $query = Post::find()->where(['status'=>2]);
         $countQuery = clone $query;
         $count=$query->count();
      //   $query = Post::find();
