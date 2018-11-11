@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9264d368-f0fc-4a27-8910-2d867a92dd8d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yii/basic/models/CommentSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/models/CommentSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/_search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/basic/modules/admin/views/layouts/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/basic/modules/admin/views/layouts/admin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,17 +42,26 @@
       <file leaf-file-name="CommentSearch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/models/CommentSearch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+            <state relative-caret-position="743">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yii/basic/models/Comment.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
               <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/layouts/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -123,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_201016_tbl_user.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_202430_tbl_post_table.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_202802_tbl_user_table.php" />
         <option value="$PROJECT_DIR$/yii/basic/migrations/m181104_202749_tbl_post_table.php" />
@@ -174,6 +186,7 @@
         <option value="$PROJECT_DIR$/yii/basic/models/Post.php" />
         <option value="$PROJECT_DIR$/yii/basic/modules/admin/views/comment/index.php" />
         <option value="$PROJECT_DIR$/yii/basic/models/CommentSearch.php" />
+        <option value="$PROJECT_DIR$/yii/basic/modules/admin/views/layouts/admin.php" />
       </list>
     </option>
   </component>
@@ -193,7 +206,7 @@
       <path value="$PROJECT_DIR$/yii/basic/vendor/bower-asset/yii2-pjax/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-71" />
     <option name="y" value="355" />
     <option name="width" value="1918" />
@@ -228,7 +241,7 @@
               <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
               <item name="yii" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
@@ -236,6 +249,26 @@
               <item name="yii" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii-curse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii-curse" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,15 +330,15 @@
       <workItem from="1541782997955" duration="12632000" />
       <workItem from="1541832060943" duration="14222000" />
       <workItem from="1541924371668" duration="20000" />
-      <workItem from="1541924392701" duration="16886000" />
+      <workItem from="1541924392701" duration="17252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139088000" />
+    <option name="totallyTimeSpent" value="139454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -453,11 +486,6 @@
         <state relative-caret-position="204">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/layouts/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/views/layouts/admin.php">
@@ -670,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/basic/models/CommentSearch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="743">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
@@ -679,6 +707,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/basic/modules/admin/views/layouts/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
         </state>
       </provider>
     </entry>

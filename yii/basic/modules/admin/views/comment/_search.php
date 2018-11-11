@@ -19,11 +19,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'content') ?>
 
-    <?= $form->field($model, 'tags') ?>
-
     <?= $form->field($model, 'status') ?>
 
     <?= $form->field($model, 'post_id') ?>
+
+    <?= $form->field($model, 'create_time') ?>
+
+    <?php // echo $form->field($model, 'author') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
