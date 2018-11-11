@@ -19,7 +19,7 @@ class CommentSearch extends Comment
     {
         return [
             [['id', 'status', 'post_id'], 'integer'],
-            [['content', 'tags'], 'safe'],
+            [['content'], 'safe'],
         ];
     }
 
@@ -65,8 +65,8 @@ class CommentSearch extends Comment
         ]);
 
         $query->andFilterWhere(['like', 'content', $this->content])
-            ->andFilterWhere(['like', 'tags', $this->tags]);
-
+          // ->andFilterWhere(['like', 'tags', $this->tags]);
+        ;
         return $dataProvider;
     }
 }
