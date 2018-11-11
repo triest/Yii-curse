@@ -62,4 +62,13 @@ class Comment extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Post::className(), ['id' => 'post_id']);
     }
+
+    public function saveStatus($status)
+    {
+      //  var_dump($status);
+      //  die();
+        $this->status=$status;
+        return $this->save(false);
+
+    }
 }

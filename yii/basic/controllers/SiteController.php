@@ -98,7 +98,8 @@ class SiteController extends Controller
         //  var_dump($tags);
       //  die();
         $selectedTags=$post->getSelectedTags();
-        $comments=$post->comments;
+       // $comments=$post->comments;
+        $comments=$post->getSelectedComments();
       //  var_dump($comments);
         $commentForm=new CommentForm();
       //  var_dump($selectedTags);

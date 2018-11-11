@@ -109,6 +109,28 @@ class CommentController extends Controller
         return $this->redirect(['index']);
     }
 
+    public function actionStatus($id){
+        $comment=$this->findModel($id);
+        if(Yii::$app->request->isPost){
+
+
+            //    die();
+            $status=Yii::$app->request->post("status");
+     //       var_dump($status);
+          //  die();
+            $comment->saveStatus($status);
+            //  echo 'tags saved';
+            //   die();
+            return $this->actionView($id);
+            //  return $this->render(['view','id'=>$post->id]);
+        }
+        $status=[];
+
+        return $this->render('status',['post'=>$comment]);
+
+    }
+
+
     /**
      * Finds the Comment model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.

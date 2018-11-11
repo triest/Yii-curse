@@ -170,7 +170,7 @@ class PostController extends Controller
         //    var_dump(Yii::$app->request->post());
             $status=Yii::$app->request->post("status");
 
-        //    var_dump($status);
+            var_dump($status);
 
             //  var_dump($tags);
             $post->saveStatus($status);

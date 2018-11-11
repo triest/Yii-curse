@@ -114,6 +114,16 @@ class Post extends \yii\db\ActiveRecord
         return ArrayHelper::getColumn($selectedIds, ['name']);
     }
 
+    public function getSelectedComments()
+    {
+        $selectedIds = $this->getComments()->select(['id','content','status','post_id'])->where(['status'=>1])->all();
+       //   var_dump($selectedIds);
+        //  die();
+        return $selectedIds;
+       // return ArrayHelper::getColumn($selectedIds, ['id','content','status','post_id']);
+    }
+
+
     public function getSelectedTags2()
     {
         $selectedIds = $this->getTags()->select('id','name')->all();
