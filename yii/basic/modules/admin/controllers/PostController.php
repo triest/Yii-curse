@@ -152,4 +152,33 @@ class PostController extends Controller
         //var_dump($post);
         //var_dump($tag->post);
     }
+
+    public function actionSetStatus($id){
+      //  var_dump($id);
+      //  die();
+        $post=$this->findModel($id);
+        $selectedTags=[];
+        $selectedTags=$post->getSelectedTags();
+        //   var_dump($selectedTags);
+        $tags=ArrayHelper::map(Tag::find()->all(),'id','name');
+
+        if(Yii::$app->request->isPost){
+            //   echo 'ispost';
+            die();
+            $tags=Yii::$app->request->post('tags');
+            //  var_dump($tags);
+            $post->saveTags($tags);
+            //  echo 'tags saved';
+            //   die();
+            return $this->actionView($id);
+            //  return $this->render(['view','id'=>$post->id]);
+        }
+        $status=[];
+
+        return $this->render('status',['post'=>$post]);
+
+        //var_dump($post);
+        //var_dump($tag->post);
+    }
+
 }
