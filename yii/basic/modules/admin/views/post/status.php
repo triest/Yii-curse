@@ -19,7 +19,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= Html::dropDownList('ctatus',  $post->status,[1=>"Черновик",2=>"Запись опубликована",3=>"Запись с истекшим сроком действия"], ['class'=>'form-control']) ?>
+    <?= Html::dropDownList('status',  $post->status,[1=>"Черновик",2=>"Запись опубликована",3=>"Запись с истекшим сроком действия"], ['class'=>'form-control']) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Submit', ['class' => 'btn btn-success']) ?>

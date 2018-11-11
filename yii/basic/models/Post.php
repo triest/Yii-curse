@@ -137,6 +137,13 @@ class Post extends \yii\db\ActiveRecord
         }
     }
 
+    public function saveStatus($status)
+    {
+     $this->status=$status;
+     return $this->save(false);
+
+    }
+
     public function getDate()
     {
         return Yii::$app->formatter->asDate($this->create_time);

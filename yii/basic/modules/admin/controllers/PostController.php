@@ -164,10 +164,18 @@ class PostController extends Controller
 
         if(Yii::$app->request->isPost){
             //   echo 'ispost';
-            die();
-            $tags=Yii::$app->request->post('tags');
+            //var_dump(Yii::$app->request);
+           // die();
+          //  $tags=Yii::$app->request->post('tags');
+        //    var_dump(Yii::$app->request->post());
+            $status=Yii::$app->request->post("status");
+
+        //    var_dump($status);
+
             //  var_dump($tags);
-            $post->saveTags($tags);
+            $post->saveStatus($status);
+
+        //    die();
             //  echo 'tags saved';
             //   die();
             return $this->actionView($id);
